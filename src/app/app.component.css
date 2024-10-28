@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    background-color: rgb(0, 187, 45);
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    background: rgb(0, 187, 45);
+    padding: 10px;
+}
+
+form input {
+    flex: 1;
+    background-color: rgb(227, 229, 231);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 1px 2px;
+    padding: 6px;
+}
+
+form button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 8px;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-page {
+    border: 7px solid rgb(0, 187, 45);
+    max-width: 500px;
+    margin: 5px auto;
+}
+
+.chat {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: rgba(241, 241, 241, 0.993);
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+.attendant-message {
+    align-items: flex-start;
+}
+
+.user-message {
+    align-items: flex-end;
+}
+
+.msg-chat{
+    padding: 7px 10px;
+    margin-top: 2px;
+    border-radius: 5px;
+    min-width: 300px;
+    background-color: rgb(191, 255, 204);
+}

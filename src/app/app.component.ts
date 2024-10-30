@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'basic-chat';
+  messages : Array<String> = [];
 
   @ViewChild('dynamicContainer', { read: ViewContainerRef, static: true })
   dynamicContainer!: ViewContainerRef;
@@ -22,9 +23,12 @@ export class AppComponent {
   onSubmit(form: NgForm) {
     const text = form.value.textField;
 
-    form.reset();
+    if(text != '') {
+      form.reset();
 
-    this.addComponent(text);
+      this.messages.push(text)
+      this.addComponent(text);
+    }
   }
 
   addComponent(text: string) {

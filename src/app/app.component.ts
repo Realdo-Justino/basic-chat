@@ -21,6 +21,9 @@ export class AppComponent {
 
   onSubmit(form: NgForm) {
     const text = form.value.textField;
+
+    form.reset();
+
     this.addComponent(text);
   }
 

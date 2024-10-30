@@ -1,0 +1,18 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+.user-message {
+    align-items: flex-end;
+}
+
+.msg-chat{
+    padding: 7px 10px;
+    margin-top: 2px;
+    border-radius: 5px;
+    min-width: 300px;
+    background-color: rgb(191, 255, 204);
+}
